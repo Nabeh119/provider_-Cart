@@ -7,6 +7,7 @@ class Cart extends ChangeNotifier {
   double price = 0.0;
 
   void add(Item item) {
+    // print("item added");
     _items.add(item);
     price += item.price;
     notifyListeners();

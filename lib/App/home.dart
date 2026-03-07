@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:state_management_pro/Model/cart.dart';
-import 'package:state_management_pro/Model/checkout.dart';
+import 'package:state_management_pro/Example/checkout.dart';
 import 'package:state_management_pro/Model/item.dart';
 
 class Home extends StatelessWidget {
@@ -51,7 +51,6 @@ class Home extends StatelessWidget {
                   Icons.add,
                 ),
                 onPressed: () {
-                  print(cart.price);
                   cart.add(items[index]);
                   // setState(() {
                   //   x++;

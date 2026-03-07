@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:state_management_pro/App/hometest2.dart';
 import 'package:state_management_pro/Model/cart.dart';
+import 'package:state_management_pro/Model/cart2.dart';
 import 'package:state_management_pro/app/home.dart';
 
 void main() {
@@ -14,13 +16,13 @@ class Provider extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) {
-        return Cart();
+        return Cart2();
       },
       child: MaterialApp(
         debugShowMaterialGrid: false,
         debugShowCheckedModeBanner: false,
         title: "Smart Home",
-        home: Home(),
+        home: Hometest2(),
       ),
     );
   }
